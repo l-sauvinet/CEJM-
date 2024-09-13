@@ -1,0 +1,265 @@
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Section Services */
+.services {
+    padding: 80px 0;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Chaque élément de service */
+.service-item {
+    width: 48%; /* Largeur de chaque élément pour les aligner côte à côte */
+    margin-bottom: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+
+.service-item img {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.service-item img:hover {
+    scale: 1.05;
+}
+
+.service-item h3 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* Pour centrer le troisième élément sous les deux premiers */
+.third-item-center {
+    justify-content: center;
+}
+
+.third-item-center .service-item {
+    width: 60%; /* Largeur plus étroite pour centrer le troisième élément */
+}
+
+/* Responsive - Sur mobile, les trois éléments seront empilés */
+@media (max-width: 768px) {
+    .services-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%; /* Chaque service prend toute la largeur sur mobile */
+    }
+
+    .third-item-center .service-item {
+        width: 90%; /* Ajuste également la largeur du troisième service sur mobile */
+    }
+}
+/* Contact */
+.contact {
+    padding: 80px 0;
+    background: #f4f4f4;
+    text-align: center;
+    height: 600px;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #f04a45;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.partenaires {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.partenaires-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.partenaire-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.partenaire-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.partenaire-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.partenaire-item p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.partenaire-item .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.partenaire-item .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%;
+    }
+
+    .contact input, .contact textarea {
+        width: 90%;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+}
+
+/* Section Écoresponsable */
+.ecoresponsable {
+    background-color: #f3f4f6; /* Fond gris clair */
+    padding: 60px 20px; /* Espace autour du contenu */
+    text-align: center;
+    border-top: 3px solid #00b894; /* Ligne verte au-dessus pour démarquer la section */
+    color: #333; /* Couleur du texte */
+}
+
+.ecoresponsable h2 {
+    font-size: 2.5em; /* Titre plus grand */
+    margin-bottom: 20px; /* Espace sous le titre */
+    color: #00b894; /* Couleur verte pour attirer l’attention */
+}
+
+.ecoresponsable p {
+    font-size: 1.2em; /* Texte légèrement agrandi pour plus de lisibilité */
+    max-width: 800px; /* Limite de largeur du texte pour plus de confort de lecture */
+    margin: 0 auto; /* Centrage du paragraphe */
+    line-height: 1.6; /* Meilleur espacement des lignes */
+    color: #555; /* Couleur grise pour un meilleur contraste */
+}
+
+.ecoresponsable p strong {
+    color: #00b894; /* Accent sur les mots importants avec du vert */
+}
