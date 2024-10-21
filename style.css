@@ -263,3 +263,44 @@ footer {
 .ecoresponsable p strong {
     color: #00b894; /* Accent sur les mots importants avec du vert */
 }
+
+
+.barriere-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes de taille égale */
+    gap: 20px; /* Espace entre les colonnes et les rangées */
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.barriere-type {
+    background-color: #f5f5f5; /* Facultatif, juste pour le style */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.barriere-type:hover {
+    background-color: #e0e0e0; /* Effet au survol */
+}
+
+.barriere-type-description {
+    display: none; /* Cache la description par défaut */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.barriere-type:hover .barriere-type-description {
+    display: block; /* Affiche la description lorsque la div est survolée */
+}
+
+.solution {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e0f7fa; /* Couleur de fond différente pour la section de solutions */
+    border-radius: 5px;
+    font-style: italic; /* Italique pour une distinction visuelle */
+}
